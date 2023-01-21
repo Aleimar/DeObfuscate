@@ -13,4 +13,3 @@ deployment:
     - /bin/cp search-result.html $DEPLOYPATH
     - /bin/cp .cpanel.yml $DEPLOYPATH
     - /bin/cp single-post.html $DEPLOYPATH
-
