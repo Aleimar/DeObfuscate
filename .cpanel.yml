@@ -1,0 +1,25 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp -R _includes $DEPLOYPATH
+    - /bin/cp -R _layouts $DEPLOYPATH
+    - /bin/cp -R _posts $DEPLOYPATH
+    - /bin/cp -R _sass $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R bin $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R posts $DEPLOYPATH
+    - /bin/cp _config.yml $DEPLOYPATH
+    - /bin/cp .cpanel.yml $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp Gemfile $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp jekyll-theme-clean-blog.gemspec $DEPLOYPATH
+    - /bin/cp LICENSE $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp _config.yml $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
+    - /bin/cp screenshot.png $DEPLOYPATH
