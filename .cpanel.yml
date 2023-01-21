@@ -9,7 +9,7 @@ deployment:
     - /bin/cp changelog.txt $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp README.txt $DEPLOYPATH
+    - /bin/cp Readme.txt $DEPLOYPATH
     - /bin/cp searchResult.html $DEPLOYPATH
     - /bin/cp .cpanel.yml $DEPLOYPATH
     - /bin/cp singlePost.html $DEPLOYPATH
