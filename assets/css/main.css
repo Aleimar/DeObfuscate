@@ -137,8 +137,13 @@ section {
   height: 70px;
 }
 
-.header .logo img {
-  max-height: 40px;
+.header{
+  max-height: 400px;
+  margin-right: 6px;
+}
+
+.logo img {
+  max-height: 400px;
   margin-right: 6px;
 }
 
