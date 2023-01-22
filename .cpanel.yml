@@ -4,6 +4,7 @@ deployment:
     - export DEPLOYPATH=/home/obfuzbhr/public_html/
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R forms $DEPLOYPATH
+    - /bin/cp -R articles $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp category.html $DEPLOYPATH
     - /bin/cp changelog.txt $DEPLOYPATH
