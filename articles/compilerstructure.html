@@ -166,11 +166,11 @@
                         <p><i>The first step is to recognize each words in a statement. </i></p>
                         <p>Lexical analysis (also called scanning), reads streams of character from source program and group these characters into meaningful sequences called <i>tokens</i>.</p>
                         <p> Consider the following statement.</p>
-                        <p><center><i>Alex love her dog.</i></center></p>
+                        <p><center><i>Alex loves her dog.</i></center></p>
                         <p>In the English language, we group letters to form words before we read it. In the statement above, we have the words "<b>Alex</b>","<b>love</b>","<b>her</b>", and "<b>dog</b>". </p>
                         <p>Now, let's look into this programming statement:</p>
                         <p><center><i>force = mass * 9.8.</i></center></p>
-                        <p>In programming, <b>"force"</b>,<b>"="</b>, <b>"mass"</b>, <b>"*"</b>, and <b>"9.8"</b> are called <i>lexemes</i>. Each lexeme will be processed to become a <i>lexical token (or token)</i>, a group of characters with identified meaning. You can read more about Lexical Analysis here.</p>
+                        <p>In programming, <b>"force"</b>,<b>"="</b>, <b>"mass"</b>, <b>"*"</b>, and <b>"9.8"</b> are called <i>lexemes</i>. Each lexeme will be processed to become a <i>lexical token (or token)</i>, a group of characters with identified meaning. You can read more about Lexical Analysis <u>here</u>.</p>
 
                         <p style="font-family: Futura;"><b>SYNTAX ANALYSIS</b></p>
                         <p><i>The next step is to understand the statement.</i></p>
@@ -181,18 +181,18 @@
                         </figure>
                         <figure class="my-4">
                             <img src="../assets/img/Syntax_Tree_PL.png" alt="" class="img-fluid">
-                            <figcaption>To learn more about Syntax Analysis, you this article. </figcaption>
+                            <figcaption>To learn more about Syntax Analysis, you this <u>article</u>. </figcaption>
                         </figure>
 
 
                         <p style="font-family: Futura;"><b>SEMANTIC ANALYSIS</b></p>
                         <p><i>Then we analyze the statement.</i></p>
                         <p> After the syntax tree is generated, compilers check whether the source program is consistent with semantic rule. It checks whether the statement has a clear meaning and consistent with what they're supposed to be used.</p>
-                        <p><center><i>Alex love her dog.</i></center></p>
+                        <p><center><i>Alex loves her dog.</i></center></p>
                         <p>In English language, the statement above could be sematically analyzed through the following questions:</p>
                         <!-- <p><center><i>1. What did subject love?</i></center></p> -->
-                        <p><i>1. What did subject love?</i></p>
-                        <p>If the statement is just <i>"Alex love.",</i> is it still consistent with the rules of English language?</p>
+                        <p><i>1. What did the subject (Alex) love?</i></p>
+                        <p>If the statement is just <i>"Alex loves.",</i> is it still consistent with the rules of English language?</p>
                         <p><i>2. Is there a subject in the statement?</i></p>
                         <p>Now if the statement is just <i>"Love her dog.",</i> will it still hold the same meaning from the original statement? </p>
                         <p>&nbsp;</p>
@@ -201,31 +201,36 @@
                         <p><i>1. For multiplication operation, does it have value for multiplicand and multiplier?</i></p>
                         <p><i>2. Does the assignment statement have clear assigned values?</i></p>
                         
-                        <p>Semantic Analysis also checks data types, wrong arguments, undeclared/multiple declarations, etc. More of this can be read through this article.</p>
+                        <p>Semantic Analysis also checks data types, wrong arguments, undeclared/multiple declarations, etc. More of this can be read through this <u>article</u>.</p>
 
                         <p style="font-family: Futura;"><b>CODE OPTIMIZATION</b></p>
                         <p><i>Then we edit.</i></p>
                         <p> This is a transformational stage where we improve code by minimizing reading time, use less memory and other resources.</p>
-                        <p><center><i>Alex love dogs.</i></center></p>
-                        <p>From the original statement, "<i>Alex love her dog.</i>", we can use the statement above instead (assuming its true) to minimize reading time but still having the same meaning and usage.</p>
+                        <p><center><i>Alex loves dogs.</i></center></p>
+                        <p>From the original statement, "<i>Alex loves her dog.</i>", we can use the statement above instead (assuming its true) to minimize reading time but still having the same meaning and usage.</p>
                         <p><center><i>mass = 0</i></center></p>
                         <p><center><i>force = mass * 9.8</i></center></p>
                         <p>Now, if the source program defined the value of mass as 0, the compiler can then optimize and change the statement to:</p>
                         <p><center><i>force = 0</i></center></p>
                         <p>Annihilating the multiplication statement reduces memory usage, and time computation. </p>
-                        <p>You can read more about Code Optimization here.</p>
+                        <p>You can read more about Code Optimization <u>here</u>.</p>
 
                         <p style="font-family: Futura;"><b>CODE GENERATION</b></p>
                         <p>Finally, machine translation.</p>
                         <p> This is the last stage of compiler where actual code will be translated to machine instruction.</p>
                         <p><center><i>force = 0</i></center></p>
-                        <p>Let's say <b>R1</b> means register (a type of computer memory), <b>LD</b> is a load instruction, <b>ST</b> is a store instruction, then we can translate the statement above to: </p>
-                        <p>1. <i>R1 LD, force</i></p>
+                        <p>Let's say <b>R1</b> means register (a type of computer memory), <b>LD</b> is a load instruction, <b>id</b> as the identifier "force", and <b>ST</b> is a store instruction, then we can translate the statement above to: </p>
+                        <p>1. <i>R1 LD, id</i></p>
                         <p>2. <i>ST R1, 0</i></p>
                         <p>The instructions above will be read by the computer as: </p>
                         <p>1. load (assign) the <b>force</b> to Register Address 1. </p>
                         <p>2. Store the value '0' to Register Address 1. </p>
                         <p><b>Note</b>: The example above is just an overview of what is the Code Generation phase for compilers. Different machines have different set of instructions. And for deeper understanding of each phases, we wrote specific articles for them which you may read through the links below.</p>
+
+                        <p>&nbsp;</p>
+                        <p>Now that the source code is translated to machine code, the machine can now run the program through step-by-step instructions. 
+                            Thanks to compilers, we can now make advance programs and software without the need to write in very low-level language!
+                        </p>
                         
                         
                     </div><!-- End Single Post Content -->
