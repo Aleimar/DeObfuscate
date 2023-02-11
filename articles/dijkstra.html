@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>OBFUSCATE</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <!-- <link href="../assets/img/favicon.png" rel="icon"> -->
+    <!-- <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+    <link href="../assets/img/obfuscate_tab_icon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS Files -->
+    <link href="../assets/css/variables.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <p>&nbsp;</p>
+                <img src="../assets/img/DeObfuscate-logo.gif" alt="">
+                <!-- <h1 style="font-family:Futura">OBFUSCATE</h1> -->
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">Blog</a></li>
+                    <li class="dropdown"><a href="category.html"><span>Categories</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="searchResult.html">Search Result</a></li>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <div class="position-relative">
+                <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+                <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+                <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+                <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+
+                <!-- ======= Search Form ======= -->
+                <div class="search-form-wrap js-search-form-wrap">
+                    <form action="searchResult.html" class="search-form">
+                        <span class="icon bi-search"></span>
+                        <input type="text" placeholder="Search" class="form-control">
+                        <button class="btn js-search-close"><span class="bi-x"></span></button>
+                    </form>
+                </div><!-- End Search Form -->
+
+            </div>
+
+        </div>
+
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <section class="compilerstructure-content">
+            <div class="container">
+
+                <div class="post-content" data-aos="fade-up">
+
+                    <!-- ======= Single Post Content ======= -->
+                    <div class="dijkstra">
+                        <div class="post-meta"><span class="date">Dijkstra's Algorithm</span> <span class="mx-1">&bullet;</span>
+                            <span>Feb 11th '23</span></div>
+                        <h1 class="mb-5">Dijkstra's Algorithm</h1>
+                        <p><span class="firstcharacter" style="font-family: Futura;">T</span>o understand the concept of Dijkstra’s algorithm, 
+                            we need to first familiarize ourselves with some foundational information. Let’s begin by discussing graphs.
+                        </p>
+
+                        <p style="font-family: Futura;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A graph is a visual representation of data, 
+                            organized in a way that shows relationships between different elements. It is created using a set of points, known as vertices, 
+                            which are connected by lines or arcs, known as edges. The graph provides a clear way to see the connection between the different elements, 
+                            making it easier to understand the relationships.
+                        </p>
+
+                        <p>
+                            Graphs come in two forms: directed and undirected. A directed graph is made up of a set of vertices (nodes) connected by directed edges, 
+                            meaning the edges have a specific direction. On the other hand, an undirected graph consists of a set of nodes connected by bidirectional edges, 
+                            meaning the edges don’t have a specific direction. These graphs are sometimes referred to as undirected networks.
+                        </p>
+
+                        <p>
+                            To continue, we will focus on undirected graphs in the upcoming examples. Additionally, there is a type of graph known as a weighted graph, 
+                            which is characterized by assigning a numerical value, typically a positive number, to each edge.
+                        </p>
+
+                        <p>
+                            <b>Let’s now discuss Dijkstra’s algorithm:</b>
+                        </p>
+
+                        <p>
+                            Dijkstra’s algorithm is a tool used to find the shortest route between two points in a graph. Imagine a map with many roads connecting different cities. 
+                            If you want to travel from one city to another, Dijkstra’s algorithm will help you find the quickest way to get there. The algorithm considers the distance 
+                            between each city, represented by lines on the map, and uses this information to determine the fastest route. Created by Dutch computer scientist Edgar W. Dijkstra, 
+                            the algorithm only works with graphs that have non-negative weights, meaning the distances between cities are always positive numbers. The purpose of the algorithm 
+                            is to solve the shortest-path problem by finding the most efficient route from the starting node to every other node in the graph.
+                        </p>
+
+                        <p>
+                            <b>What is the shortest-path problem? </b>
+                        </p>
+
+                        <p>
+                            The shortest path problem involves finding the most efficient route between two points in a network, such as roads or connections. 
+                            This problem is important in various industries, including transportation, communications, and geography. To solve this problem, 
+                            Dijktra’s algorithm, A* algorithm, or Bellman-Ford algorithm is used.
+                        </p>
+
+                        <p>
+                            <b>How it works - A simplified version</b>
+                        </p>
+
+                        <p>
+                            <list>
+                                <ol>1. Initialize two sets of vertices, one for unvisited and one for visited vertices. Assign a distance value to each vertex. 
+                                    The starting vertex will have a distance value of 0, while all other vertices will have a distance value of infinity.
+                                </ol>
+
+                                <ol>2. Select the unvisited vertex with the smallest distance value and label it as the current vertex.</ol>
+
+                                <ol>
+                                    3. For each vertex neighboring the current one, calculate the distance from the current vertex to that neighbor. If this distance is shorter 
+                                    than the current distance value for that neighbor, update the distance value.
+                                </ol>
+
+                                <ol>
+                                    4. Mark the current vertex as visited and transfer it to the set of visited vertices.
+                                </ol>
+
+                                <ol>
+                                    5. Keep repeating steps 2 to 4 until all vertices have been visited or a predetermined stopping point has been reached.
+                                </ol>
+
+                                <ol>
+                                    6. The distance values for each vertex show the shortest distance from the starting point to that vertex. The actual route can be determined 
+                                    by tracing the path with the smallest distance from the starting vertex to the desired endpoint.
+                                </ol>
+                            </list>
+                        </p>
+
+                        <p>
+                            <b>Let’s have a sample problem:</b>
+                        </p>
+
+                        <p>
+                            Example: Let us try finding the shortest path from node A to all nodes.
+                        </p>
+
+                        <figure class="my-4">
+                            <img src="../assets/img/Dijkstra's algorithm.png" alt="" class="img-fluid">
+                            <figcaption><i>Sample Weighted Graph</i></figcaption>
+                        </figure>
+
+                        <p>
+                            First let us initialize our two sets:<br>
+                            <b>Unvisisted nodes: {A, B, C, D, E}</b><br>
+                            <b>Visited nodes: {}</b>
+                        </p>
+
+                        <p>
+                            Now let us choose our first node: <b>A</b><br>
+                            <b>Unvisited nodes: {B, C, D, E}</b><br>
+                            <b>Visisted nodes: {A}</b>
+                            <b>Distance of A to each nodes:</b><br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - table 1.png" alt="" class="img-fluid">
+                            </figure>
+                            <b>Updated path:</b>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - A.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            Then, let us look at the edges leaving A and update the distances. We have, 
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - table 2.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            We see that C has the smallest distance from A so, let us update the sets:<br>
+                            <b>Visited nodes: {A, C}</b><br>
+                            <b>Unvisited nodes: {B, D, E</b><br>
+                            <b>Updated path:</b><br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - C.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            Next, we check again the edges leaving C, we have the updated distances:<br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - table 3.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            From here, it is obvious that B has the smallest distance so let us update our sets and the graph.<br>
+                            <b>Unvisited nodes: {D, E}</b><br>
+                            <b>Visited nodes: {A, C, B}</b><br>
+                            <b>Updated graph:</b><br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - B.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            Now, let us check the edges leaving B and update the distances.<br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - table 4 and 5.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            D has the smallest distance, so we will add D to the visited nodes.<br>
+                            <b>Unvisited nodes:{E}</b><br>
+                            <b>Visited nodes: {A, C, B, D}</b><br>
+                            <b>Updated graph:</b><br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - D.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            Since D has no edges leaving it, we will just traverse E through B. This will leave us with no updates with our distances:<br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - table 4 and 5.png" alt="" class="img-fluid">
+                            </figure>
+                            <b>Unvisited nodes: {}</b><br>
+                            <b>Visisted nodes: {A, C, B, D, E}</b><br>
+                            <b>Updated graph:</b><br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - D.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            The loop will now stop since there are no more unvisited nodes. 
+                            The algorithm will give us the final path which is: <b>{A, C, B, D, E}</b><br>
+                            <figure class="my-4">
+                                <img src="../assets/img/Dijkstra's algorithm - final path.png" alt="" class="img-fluid">
+                            </figure>
+                        </p>
+
+                        <p>
+                            The time complexity of the algorithm is denoted by: <b>O(|E| + |V| log |V|)</b>
+                        </p>
+
+
+
+                        <h3>Conclusion:</h3>
+                        <p>
+                            Dijkstra's algorithm, while useful for determining the shortest path between multiple nodes, 
+                            may not perform optimally when trying to find the shortest route to a specific destination. 
+                            The algorithm operates by always choosing the shortest path from the unvisited list, without
+                            taking into account the target's location or proximity.
+                        </p>
+                      
+                    </div><!-- End Single Post Content -->
+
+                </div>
+
+
+            </div>
+        </section>
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+            <div class="container">
+
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <h3 class="footer-heading">About Obfuscate</h3>
+                        <p style="font-family: Futura;">Simplifying the complex concepts of computer science through
+                            blogs, tutorial, and coding exercises.</p>
+                        <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+                    </div>
+                    <div class="col-6 col-lg-2">
+
+                    </div>
+                    <div class="col-6 col-lg-2">
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h3 class="footer-heading">Related Posts</h3>
+
+                        <ul class="footer-links footer-blog-entry list-unstyled">
+                            <li>
+                                <a href="compilerstructure.html" class="d-flex align-items-center">
+                                    <img src="../assets/img/post-sq-1.jpg" alt="" class="img-fluid me-3">
+                                    <div>
+                                        <div class="post-meta d-block"><span class="date">Culture</span> <span
+                                                class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                                        <span>Lexical Analysis</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="compilerstructure.html" class="d-flex align-items-center">
+                                    <img src="../assets/img/post-sq-2.jpg" alt="" class="img-fluid me-3">
+                                    <div>
+                                        <div class="post-meta d-block"><span class="date">Culture</span> <span
+                                                class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                                        <span>Syntax Analysis</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="compilerstructure.html" class="d-flex align-items-center">
+                                    <img src="../assets/img/post-sq-3.jpg" alt="" class="img-fluid me-3">
+                                    <div>
+                                        <div class="post-meta d-block"><span class="date">Culture</span> <span
+                                                class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                                        <span>Semantic Analysis</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="compilerstructure.html" class="d-flex align-items-center">
+                                    <img src="../assets/img/post-sq-4.jpg" alt="" class="img-fluid me-3">
+                                    <div>
+                                        <div class="post-meta d-block"><span class="date">Culture</span> <span
+                                                class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                                        <span>Code Optimization</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <div class="container">
+
+                <div class="row justify-content-between">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="copyright">
+                            © Copyright <strong><span>Obfuscate</span></strong>. All Rights Reserved
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
