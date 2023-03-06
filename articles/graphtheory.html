@@ -102,158 +102,138 @@
 
     <main id="main">
 
-        <section class="combinatorics-content">
+        <section class="graphtheory-content">
             <div class="container">
 
                 <div class="post-content" data-aos="fade-up">
 
                     <!-- ======= Single Post Content ======= -->
-                    <div class="combinatorics">
-                        <div class="post-meta"><span class="date">Combinatorics</span> <span class="mx-1">&bullet;</span>
-                            <span>Mar 5th '23</span></div>
-                        <h1 class="mb-5">Combinatorics</h1>
-                        <p><span class="firstcharacter" style="font-family: Futura;">C</span>ombinatorics is a branch of discrete math that studies the ways of 
-                            counting and arranging objects in various manners. It involves examining how to select, rearrange, and combine objects to create different outcomes. 
-                            For example, it explores how many ways you can select outfits from a limited number of clothes or arrange books on a shelf. 
-                            Combinatorics is all about discovering patterns and connections between different combinations of objects.
+                    <div class="graphtheory">
+                        <div class="post-meta"><span class="date">Graph Theory</span> <span class="mx-1">&bullet;</span>
+                            <span>Mar 6th '23</span></div>
+                        <h1 class="mb-5">Graph Theory</h1>
+                        <p><span class="firstcharacter" style="font-family: Futura;">G</span>raph theory is a mathematical field that studies graphs, which are made up of dots (vertices) 
+                            and lines (edges) connecting them. Graphs can represent many things like social networks, transportation systems, or anything else where objects are connected to each other. 
+                            Graph theory helps us understand how graphs work and what we can do with them. It has many practical uses in fields like computer science, biology, and economics
                         </p>
 
                         <p style="font-family: Futura;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Combinatorics finds numerous practical applications in diverse areas, such as computer science, 
-                            cryptography, statistics, game theory, physics, and biology. Additionally, it holds significant importance in pure mathematics, where it aids in addressing problems 
-                            associated with <a href="../articles/graphtheory.html"><u>graph theory</u></a>, <u>number theory</u>, <u>algebraic geometry</u>, and other related topics.
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What are the types of graphs?
                         </p>
 
                         <p>
-                            Some of the key topics in combinatorics include:
+                            There are many types of graphs, and they can be classified based on their properties and characteristics. Here are some common types of graphs:
                         </p>
 
                         <p>
                             <list>
-                                <ol>1. Combinatorial enumeration: the study of counting and listing objects in different ways, like arranging things in order, 
-                                    selecting a few of them, or dividing them into groups. For example, it can help in figuring out how many different pizza toppings 
-                                    you can choose or how many different ways you can organize a set of toys in a box.
+                                <ol>1. Directed graph: A type of graph where the edges have a specific direction or arrow, which means they represent a one-way relationship between vertices. 
+                                    This means that if there is an edge from vertex A to vertex B, it does not necessarily mean that there is an edge from vertex B to vertex A.
 
                                 </ol>
 
-                                <ol>2. Graph theory: a field of math that studies graphs, which are structures made up of points (called vertices) connected by lines (called edges). 
-                                    Graphs are used to represent the relationships or connections between different objects or ideas. For example, a graph could be used to represent 
-                                    the network of connections between different computers or the links between different web pages on the internet.
-                                </ol>
-
-                                <ol>
-                                    3. Combinatorial designs: a mathematical field that explores how to arrange objects to meet specific requirements. It involves finding patterns and 
-                                    combinations of objects that satisfy certain conditions, such as Latin squares, Steiner systems, or other rules that must be followed. For instance, 
-                                    it could help in organizing schedules for different teams that need to play against each other or designing codes that can detect and correct errors.
+                                <ol>2. Undirected graph: A type of graph where the edges do not have a specific direction or arrow. This means that the relationship between vertices represented 
+                                    by edges is two-way or bidirectional. If there is an edge between vertex A and vertex B, then there is also an edge between vertex B and vertex A.
                                 </ol>
 
                                 <ol>
-                                    4. Ramsey theory: a branch of mathematics that investigates the relationships between different structures. It focuses on finding the conditions under 
-                                    which a particular combinatorial structure must contain a certain substructure. In simpler terms, it seeks to identify patterns or rules that determine 
-                                    when a particular pattern or structure will always appear within a larger structure. This could be useful in solving problems such as determining the 
-                                    likelihood of certain events occurring or identifying the optimal strategies for playing games.
+                                    3. Weighted graph: A type of graph where each edge has a number assigned to it, which represents how important or strong the relationship is between the vertices connected by that edge. 
+                                    The weight could represent something like distance, cost, or time, depending on the specific problem being modeled.
                                 </ol>
 
                                 <ol>
-                                    5. Combinatorial optimization: a field of mathematics that focuses on solving problems related to combinatorial structures. It involves finding the best 
-                                    possible solution to problems like the <a href="../articles/travelingsalesman.html"><u>traveling salesman problem</u></a> or the <a href="../articles/knapsackproblem.html"><u>knapsack problem</u></a>. These problems require choosing the best combination of elements 
-                                    from a set while following certain rules or constraints. For example, the traveling salesman problem asks how a salesperson can visit a set of cities in the 
-                                    shortest possible route, and the knapsack problem involves selecting the most valuable items to pack into a knapsack with limited capacity.
+                                    4. Complete graph: A type of graph where every vertex is directly connected to every other vertex. This means that there is an edge between every pair of vertices in the graph. 
+                                    So, if there are n vertices in the graph, then there are n*(n-1)/2 edges in total. It’s like a network where everyone is connected to everyone else.
+                                </ol>
+
+                                <ol>
+                                    5. Bipartite graph: A type of graph where the vertices can be divided into two distinct groups or sets such that every edge connects a vertex in one set to a vertex in the other set. 
+                                    This means that there are no edges between vertices in the same set. It’s like having two separate groups of people or objects, and every relationship or connection is between a person 
+                                    or object from one group and a person or object from the other group.
+                                </ol>
+
+                                <ol>
+                                    6. Tree: A type of graph where you can only go from one vertex to another in one way, and you can’t follow a path that loops back to where you started.
+                                </ol>
+
+                                <ol>
+                                    7. Planar graph: A type of graph that can be drawn on a flat surface (like a sheet of paper) without any edges crossing over each other.
+                                </ol>
+
+                                <ol>
+                                    8. Eulerian graph: A type of graph where you can find a path that goes through every edge exactly once.
+                                </ol>
+
+                                <ol>
+                                    9. Hamiltonian graph: A type of graph where you can find a path that goes through every vertex exactly once.
                                 </ol>
                             </list>
                         </p>
 
                         <p>
-                            <b>Example: pair of outfits to choose from</b>
+                            These are just a few examples of the many types of graphs that exist. The type of graph that is appropriate for a 
+                            particular application depends on the nature of the problem being modeled.
+                        </p>
+
+                        <p style="font-family: Futura;">
+                            How can we determine what graph to use in a certain problem?
                         </p>
 
                         <p>
-                            How many outfits can you make if you have different number of tops and pants?
+                            When choosing a graph type in graph theory, it’s important to consider what information you want to extract from the graph, 
+                            what properties you want the graph to have, and what algorithms or techniques you plan to use to analyze the graph. 
+                            It’s also important to make sure the graph type you choose accurately represents the problem and is suitable for the data you have.
                         </p>
 
-                        <figure class="my-4">
-                            <img src="../assets/img/combinatorics - table 1.png" alt="" class="img-fluid">
-                            <figcaption><i></i></figcaption>
-                        </figure>
-
-                        <p>
-                            Each outfit you have made is a combination.<br>
-                            You can do the same if you have n x m number of parts. 
-                        </p>
-
-                        <figure class="my-4">
-                            <img src="../assets/img/combinatorics - table 1 anim 1.gif" alt="" class="img-fluid">
-                            <figcaption><i>Combinations of tops and pants</i></figcaption>
-                        </figure>
-
-                        <p>
-                            <b>Now let us talk about Permutations.</b>
-                        </p>
-
-                        <p>
-                            Permutation in combinatorics means arranging a set of things in a specific order. The order in which you arrange them matters, 
-                            and you cannot repeat any of the things you are arranging. For example, if you have three different things {A, B, C}, you can arrange 
-                            them in six different ways and each arrangement is different {AB, AC, BA, BC, CA, CB} . Permutations are useful in many areas of math, 
-                            including probability and algebra.
-                        </p>
-
-                       <p>
-                            The number of permutations of n objects taken r at a time is denoted by P(n,r) and can be calculated using this formula:
+                       <p style="font-family: Futura;">
+                            What real-world problems can be modeled by graph theory?
                        </p>
 
                        <p>
-                            <b>P(n,r) = n!/(n-r)!</b>
+                            Graph theory can be used to model a wide range of real-world problems in various fields, including: 
                        </p>
 
                        <p>
-                            This means that the number of ways you can arrange a set of things in a specific order, without repeating any of them, is equal to the factorial of the total number 
-                            of things divided by the factorial of the number of things you are arranging.
+                            <list>
+                                <ol>
+                                    1. Social networks: Graph theory can be used to represent how people are connected in social networks, such as on Facebook, LinkedIn, or Twitter.
+                                </ol>
+
+                                <ol>
+                                    2. Transportation networks: Graph theory can be used to represent the connections and routes in transportation systems, like highways, railways, and air routes.
+                                </ol>
+
+                                <ol>
+                                    3. Electrical networks: Graph theory can be used to represent how electricity flows through networks, like power grids and circuits.
+                                </ol>
+
+                                <ol>
+                                    4. Internet networks: Graph theory can be used to represent the structure of the Internet, including how websites are connected and how information flows between them.
+                                </ol>
+
+                                <ol>
+                                    5. Epidemiology: Graph theory can be used to represent the spread of diseases and epidemics among populations.
+                                </ol>
+
+                                <ol>
+                                    6. Computer Science: Graph theory can be used to represent the structure of computer networks and how different softwares are related to each other.
+                                </ol>
+
+                                <ol>
+                                    7. Linguistics: Graph theory can be used to represent the structure of language, including how words are related to each other and how information flows in written text.
+                                </ol>
+
+                                <ol>
+                                    8. Chemistry: Graph theory can be used to represent the structure of molecules and chemical reactions, including how atoms are connected to each other and how electrons flow between them.
+                                </ol>
+                            </list>
                        </p>
 
-                       <p>
-                            For example, if you have five different things and you want to arrange three of them, the formula would be:
-                       </p>
-
-                       <p>
-                            <b>P(5,3) = 5! / (5-3)!</b>
-                       </p>
-
-                       <p>
-                            This means that the number of permutations of the five things taken three at a time is equal to 5 factorial (which is 5 x 4 x 3 x 2 x 1) divided by 2 factorial (which is 2 x 1). 
-                            This simplifies to:
-                       </p>
-
-                       <p>
-                            Another concept under combinatorica is what we call Combinations. Well simply, combinations in combinatorics are all about choosing a certain number of things from a bigger group, 
-                            without caring about the order in which they are chosen. So, combinations are different from permutations in that they don’t consider the arrangement of the chosen things.
-                       </p>
-
-                       <p>
-                        For instance, if you have three different things, say A, B, and C, there are three combinations of two things you can choose: AB, AC, and BC. Notice that it does not matter in which order you pick the two things,
-                        because the combinations are the same. 
-                       </p>
-
-                       <p>
-                            The formula to calculate combinations is C(n,r) = n! / (r! (n-r)!), which is similar to the formula of permutations, but it divides by another factorial to account for the fact that order does not matter.
-                       </p>
-
-                       <p>
-                            <b>P(5,3) = 5 x 4 x 3 = 60</b>
-                       </p>
-                            So there are 60 different ways you can arrange three out of the five things without repeating any of them.
-                       <p>
-
-                        <p></p>
-
-                       </p>
 
                         <h3>Conclusion:</h3>
                         <p>
-                            Combinatorics is a branch of mathematics that helps us count and organize things, especially when there are many possibilities 
-                            to consider. It’s useful for problem-solving, and it’s used a lot in computer science to design and analyze algorithms. 
-                            Algorithms are like step-by-step instructions that computers follow to solve problems. Combinatorics can help make algorithms more 
-                            efficient and effective, which is important for things like computer security and artificial intelligence.
-
+                            These are just a few examples of the many real-world problems that can be modeled using graph theory. By modeling problems using graphs, 
+                            we can gain insights into their underlying structure and use algorithms to solve them efficiently.
                         </p>
                       
                     </div><!-- End Single Post Content -->
